@@ -1,0 +1,26 @@
+<div class="banner-photo"></div>
+<div class="comments-main-container">
+    <div class="filter-box">
+        <vodafone-search-bar 
+            (onSearch)="loadSearch($event)" [postIdsList]="listOfPostIds"></vodafone-search-bar>
+    </div>
+
+    <div class="paginator-container" *ngIf="listOfComments && listOfComments.length > 0">
+        <vodafone-paginator [totalPages]="totPages" [presentPage]="page" (navigateTo)="goToPage($event)"></vodafone-paginator>
+    </div>
+    <div class="contents-paginate">
+        <vodafone-comment-item 
+            *ngFor="let c of listOfComments"
+            [item]="c"></vodafone-comment-item>
+    </div>
+
+
+    <div class="no-item" *ngIf="listOfComments.length == 0">
+       <img src="../../../assets/img/no-comments.png">
+       <h3>No comments found.</h3>
+    </div>
+
+    <div class="paginator-container" *ngIf="listOfComments && listOfComments.length > 0">
+        <vodafone-paginator [totalPages]="totPages" [presentPage]="page" (navigateTo)="goToPage($event)"></vodafone-paginator>
+    </div>
+</div>

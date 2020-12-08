@@ -1,0 +1,27 @@
+.paginator {
+    display: flex;
+    align-items: center;
+
+    button {
+        border: none;
+        background: none;
+        color: black;
+        outline: none;
+        cursor: pointer;
+        &:disabled {
+            opacity: 0.3;
+            cursor: default;
+        }
+    }
+
+    .present-page {
+        padding: 5px 10px;
+        border: solid 1px black;
+        margin-right: 5px;
+    }
+
+    .rest-page {
+        margin-right: 5px;
+        cursor: pointer;
+    }
+}

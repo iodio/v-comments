@@ -1,0 +1,24 @@
+<div class="comment-item row" *ngIf="item">
+    <div class="user-info-container row">
+        <div class="avatar-container">
+            <div class="post" *ngIf="!isImgLoaded">
+                <div class="avatar"></div>
+            </div>
+            <img src="https://i.pravatar.cc/100?u={{item.email}}" [hidden]="!isImgLoaded" (load)="isImgLoaded = true">
+        </div>
+        <div class="user-info">
+            <div class="mail">{{item.email}}</div>
+        </div>
+    </div>
+    <div class="col text-comment-container">
+        <div class="comment-title">
+            #{{item.id}} {{item.name}}
+        </div>
+        <div class="comment-subtitle">
+            About post #{{item.postId}}
+        </div>
+        <div class="comment-body">
+            {{item.body}}
+        </div>
+    </div>
+</div>

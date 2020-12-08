@@ -1,0 +1,79 @@
+button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: var(--primary-bg-color);
+  color: white;
+  padding:10px;
+
+  img {
+      width: 100%;
+  }
+
+  &:disabled{
+    background: #ccc;
+  }
+
+  &:hover:not(:disabled){
+      background-color: var(--primary-bg-dark);
+      cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+
+.searchbar-container {
+  margin: 0 10px;
+  text-align: center;
+
+
+  .input-container {
+    height: 50px;
+    display: flex;
+    background: white;
+    flex: 1;
+
+    input {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      border: none;
+      background: none;
+      font-size: 20px;
+      padding-left: 10px;
+      font-family: 'Vodafone';
+      font-weight: 300;
+      width: 100%;
+      &:focus {
+        outline: none;
+      }
+    }
+
+    button {
+      background: none;
+
+      padding-right: 0;
+      img {
+        width: 100%;
+        height: 100%;
+        color: #4f4f4f;
+      }
+    }
+  }
+
+  select {
+    border: none !important;
+    font-family: 'Vodafone';
+    font-weight: 300;
+    font-size: 16px;
+    padding: 10px;
+    background: white;
+    &:focus {
+      outline: none;
+    }
+    
+  }
+}

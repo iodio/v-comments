@@ -1,0 +1,51 @@
+vodafone-comment-item  {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom:30px;
+}
+
+.banner-photo {
+    width: 100%;
+    background: url('../../../assets/img/comments-bg.jpg');
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.contents-paginate {margin-top: 20px;}
+
+.filter-box {
+    height: 140px;
+}
+
+vodafone-search-bar {
+    display: block;
+    margin-top: 290px;
+}
+
+.paginator-container {
+    margin-bottom: 20px;
+    float: right;
+}
+
+.no-item {
+    width: 450px;
+    margin: 0 auto;
+
+}
+
+.no-item h3 {
+    text-align: center;
+}
+
+.no-item img {
+    width: 100%;
+}

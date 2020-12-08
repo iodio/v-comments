@@ -1,0 +1,66 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --primary-bg-color: #E60000;
+    --primary-fg-color: #ffffff;
+    --secondary-bg-color: #4A4A4A;
+    --primary-bg-dark: #bd0000;
+}
+
+@font-face {
+    font-family: 'Vodafone';
+    src: url('/assets/fonts/Vodafone.woff2') format('woff2'),
+        url('/assets/fonts/Vodafone.woff') format('woff'),
+        url('/assets/fonts/Vodafone.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vodafone';
+    src: url('/assets/fonts/Vodafone-ExtraBold.woff2') format('woff2'),
+        url('/assets/fonts/Vodafone-ExtraBold.woff') format('woff'),
+        url('/assets/fonts/Vodafone-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vodafone';
+    src: url('/assets/fonts/Vodafone-Light.woff2') format('woff2'),
+        url('/assets/fonts/Vodafone-Light.woff') format('woff'),
+        url('/assets/fonts/Vodafone-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vodafone';
+    src: url('/assets/fonts/Vodafone-Bold.woff2') format('woff2'),
+        url('/assets/fonts/Vodafone-Bold.woff') format('woff'),
+        url('/assets/fonts/Vodafone-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+body {
+    margin: 0 20% !important;
+    display: block;
+    font-family: 'Vodafone', Arial, Helvetica, sans-serif;
+}
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}

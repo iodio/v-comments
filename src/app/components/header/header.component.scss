@@ -1,0 +1,27 @@
+.header {
+    margin: 20px 0;
+    align-items: center;
+    display: flex;
+
+    .menu-list {
+        display: flex;
+        background: var(--primary-bg-color);
+        color: var(--primary-fg-color);
+        align-items: center;
+        border-radius: 6px;
+        margin: 10px;
+        width: 100%;
+        margin-left: 27px;
+
+        .menu-item {
+            padding: 15px 25px;
+            font-size: 17px;
+            font-weight: bold;
+            &.active {
+                background: var(--primary-bg-dark);
+            }
+        
+        }
+        
+    }
+}

@@ -1,0 +1,16 @@
+<form id="searchForm" [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+<div class="searchbar-container row">
+    <div class="input-container" formGroupName="bar">
+        <input class="inputbox-search" name="search" type="text" formControlName="text" placeholder="Search for comments...">
+        <button type="button" class="delete-search" *ngIf="searchForm.get('bar').valid" (click)="reset()">
+            <img src="../../../assets/img/close-icon.svg"></button>
+    </div>
+    <select id="selectBox" formControlName="postId" (change)="onSubmit()">
+        <option value="0">In all posts</option>
+        <option *ngFor="let id of postIdsList" value="{{id}}">In Post #{{id}}</option>
+    </select>
+    <button type="submit" class="confirm-search" [disabled]="!searchForm.get('bar').valid">
+        <img src="../../../assets/img/search-icon.svg">
+    </button>
+</div>   
+</form>
