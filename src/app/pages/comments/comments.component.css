@@ -8,7 +8,7 @@ vodafone-comment-item  {
 
 .banner-photo {
     width: 100%;
-    background: url('../../../assets/img/comments-bg.jpg');
+    background: url('/assets/img/comments-bg.jpg');
     position: absolute;
     top: 0;
     left: 0;

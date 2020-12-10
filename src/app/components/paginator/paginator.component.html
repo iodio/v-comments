@@ -1,11 +1,11 @@
 <div class="paginator">
     <button class="navigation-button prev" (click)="prev()" [disabled]="presentPage == 1">
-        <img src="../../../assets/img/chevron-left.svg">
+        <img src="./assets/img/chevron-left.svg">
     </button>
     <div class="rest-page" *ngIf="presentPage != 1" (click)="goTo(1)">1 ... </div>
     <div class="present-page">{{presentPage}}</div>
     <div class="total-page">of {{totalPages}}</div>
     <button class="navigation-button next" (click)="next()" [disabled]="presentPage == totalPages">
-        <img src="../../../assets/img/chevron-right.svg">
+        <img src="./assets/img/chevron-right.svg">
     </button>
 </div>
